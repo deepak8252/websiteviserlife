@@ -57,6 +57,8 @@ button.btn{
 }
 button.btn:hover{
     opacity: .9 !important;
+    background-color: var(--primarycolor);
+    color: #E1E1E1;
 }
 #btn-hover:hover{
     opacity: .9 !important;
@@ -410,4 +412,53 @@ border-radius: 50%;
     font-size: 1.5rem;
     text-transform: capitalize;
     font-weight: 600;
+}
+.left,.right{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+}
+ 
+.plan-box {
+    flex: 1; /* Ensures equal space with .img */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left .icon-box li{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 6px 0px;
+    color:#757575;
+}
+.price{
+    color: var(--primarycolor);
+    font-weight: 800;
+}
+.width-50{
+width: 50%;
+margin: auto;
+}
+p{
+    text-align: justify;
+}
+@media screen and (max-width: 787px) { 
+    .width-50 {
+        width: 100% !important;
+        margin: auto;
+        
+    } 
+    .animal .owl-prev,.owl-next{
+      display: none !important;
+    }
+    .animal{
+        width: 90% !important;
+        margin: auto;
+    }
+    
 }
